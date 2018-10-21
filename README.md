@@ -32,3 +32,13 @@ df1.loc[df1['difference'].idxmax()]
 #same as before, searched for the maximum value in the new differences column and printed the whole row it lies on. 
 
 ## Problem 4
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
+import numpy as np
+#import packages I'll need to plot a graph
+
+df1.plot.line(x='Date Time', y=' Water Level')
+#plot a line graph from the dataframe, and set 'Date Time column as the x values 
+#set ' Water Level' column as the y values
+#I cannot figure out a way to label the x axis with anything...
